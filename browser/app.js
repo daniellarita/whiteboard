@@ -16,5 +16,5 @@ socket.on('disconnect', function () {
   });
 
 socket.on('broadcast_event', function(start,end,color){
-	window.whiteboard.draw(start,end,color)
+	window.whiteboard.draw(start,end,color, false)
 })
