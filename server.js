@@ -18,7 +18,8 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-
+//socket server as event emitter in order to listen
+// to new connections
 io.on('connection', function (socket) {
 
     console.log('A new client has connected!');
